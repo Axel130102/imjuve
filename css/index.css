@@ -1,0 +1,211 @@
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    margin-top: 60px;
+    margin-right: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000; 
+}
+
+header ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+header li {
+    display: inline-block;
+    margin-left: 20px; 
+}
+
+header a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: white;
+    text-decoration: none; 
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: center; 
+    }
+    header li {
+        margin-left: 10px; 
+    }
+}
+
+.container-1{
+    padding: 100px;
+}
+
+.container-1 h1{
+    color: white;
+    font-size: 50px;
+    text-align: left;
+}
+
+.container-1 h2{
+    color: goldenrod;
+    font-size: 50px;
+    text-align: left;
+}
+
+.container-1 p{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.boton{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.boton a{
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #666;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.boton a:hover{
+    background-color: #999;
+}
+
+.container-2{
+    padding: 100px;
+}
+
+.container-2 h1{
+    color: #666;
+    font-size: 50px;
+    text-align: center;
+}
+
+.container-2 h2{
+    color: goldenrod;
+    font-size: 50px;
+    text-align: center;
+}
+
+.container-2 p{
+    color: #666;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container-2-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    text-align: center;
+    padding: 100px;
+}
+
+@media (max-width: 1180px) {
+    .container-2-1 {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container-2-1 {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+.container-2-1 h3{
+    color: red;
+}
+
+.container-2-1 p{
+    color: #666;
+}
+
+.container-2-2{
+    text-align: center;
+}
+
+.container-2-2 h1{
+    color: red;
+}
+
+.container-2-2 h3{
+    color: gray;
+}
+
+.container-3{
+    background-color: goldenrod;
+    color: white;
+}
+
+.container-3-1{
+    text-align: center;
+}
+
+.container-3-2 h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.container-3-2{
+    background-color: goldenrod;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    text-align: center;
+    
+}
+
+@media (max-width: 1180px) {
+    .container-3-2 {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container-3-2 {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.container-4{
+    padding: 100px;
+}
+
+.container-4 h1{
+    color: #666;
+    font-size: 50px;
+    text-align: left;
+}
+
+.container-4 p{
+    color: blue;
+    font-size: 20px;
+    text-align: left;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #666;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
