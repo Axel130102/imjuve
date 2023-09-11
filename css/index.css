@@ -11,9 +11,12 @@ header {
     z-index: 1000;
 }
 
-header ul {
+.myHeader{
     list-style: none; 
-    padding: 0; 
+    padding: 8px; 
+    background-color: gray;
+    border-radius: 10px;
+
 }
 
 header li {
@@ -23,7 +26,7 @@ header li {
 
 header a {
     cursor: pointer;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -37,7 +40,7 @@ header a:hover {
         justify-content: center; 
     }
     header li {
-        margin-left: 10px; 
+        margin-left: 5px; 
     }
 }
 
