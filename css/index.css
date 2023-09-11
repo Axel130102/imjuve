@@ -14,7 +14,7 @@ header {
 .myHeader{
     list-style: none; 
     padding: 8px; 
-    background-color: gray;
+    background-color: #98989A;
     border-radius: 10px;
 
 }
@@ -46,6 +46,7 @@ header a:hover {
 
 .container-1{
     padding: 100px;
+    background-color: #9F2241;
 }
 
 .container-1 h1{
@@ -55,12 +56,12 @@ header a:hover {
 }
 
 .container-1 h2{
-    color: goldenrod;
+    color: #BC955C;
     font-size: 50px;
     text-align: left;
 }
 
-.container-1 p{
+.container-1 h3{
     color: white;
     font-size: 20px;
     text-align: left;
@@ -82,7 +83,7 @@ header a:hover {
     border-radius: 20px;
     border: none;
     padding: 10px;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
 }
 
