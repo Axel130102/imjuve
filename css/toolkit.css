@@ -3,12 +3,12 @@ header {
     top: 0; 
     left: 0;
     right: 0;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-right: 20px;
     padding: 10px;
     display: flex;
     justify-content: flex-end;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .myHeader{
@@ -48,23 +48,27 @@ header a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 100px;
-    background-color: red;
+    background-color: #691C32;
+}
+
+.container-1 h1{
+    color: #DDC9A3;
+    font-size: 80px;
+    text-align: left;
 }
 
 @media (max-width: 1200px) {
     .container-1{
         grid-template-columns: 1fr; 
     }
-}
-
-.container-1 h1{
-    color: goldenrod;
-    font-size: 80px;
-    text-align: left;
+    .container-1 h1{
+        font-size: 60px;
+    }
 }
 
 .container-2{
     padding: 100px;
+    color: #6F7271;
 }
 
 .container-3{
@@ -76,8 +80,13 @@ header a:hover {
 }
 
 .container-3 h3{
-    color: #666;
+    color: #6F7271;
 }
+
+.container-3 img{
+    width: 300px;
+    height: 400px;
+}   
 
 @media (max-width: 1200px) {
     .container-3{
@@ -88,7 +97,7 @@ header a:hover {
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #666;
+    background-color: #98989A;
     color: white;
     text-align: center;
     padding: 20px;

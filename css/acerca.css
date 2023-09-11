@@ -3,12 +3,12 @@ header {
     top: 0; 
     left: 0;
     right: 0;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-right: 20px;
     padding: 10px;
     display: flex;
     justify-content: flex-end;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .myHeader{
@@ -47,7 +47,7 @@ header a:hover {
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: goldenrod;
+    background-color: #BC955C;
     color: white;
     text-align: center;
     padding: 20px;
@@ -59,49 +59,35 @@ footer{
     }
 }
 
-.boton{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.boton a{
-    width: 400px;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    background-color: #666;
-    color: white;
-    border-radius: 20px;
-    border: none;
-    padding: 10px;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.boton a:hover{
-    background-color: #999;
-}
-
 .container-1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 100px;
-    background-color: #0d221e;
+    background-color: #10312B;
 }
 
 .container-1 h1{
-    color: goldenrod;
+    color: #DDC9A3;
     font-size: 80px;
     text-align: left;
 }
 
+@media (max-width: 768px) {
+    .container-1 {
+        grid-template-columns: 1fr; 
+    }
+    .container-1 h1 {
+        font-size: 60px; 
+    }
+}
+    
 .container-2{
     text-align: center;
     padding: 100px;
 }
 
 .container-2 h3{
-    color: blue;
+    color:  #235B4E;
 }
 
 .container-2-1 {
@@ -114,6 +100,7 @@ footer{
 
 .container-2-1 p {
     max-width: 1100px;
+    color:  #98989A;
 }
 
 .container-3 {
@@ -125,11 +112,11 @@ footer{
 
 .container-3 h3 {
     margin-right: 110px;
-    color: #666;
+    color: #6F7271;
 }
 
 .container-3 p {
-    color: #666;
+    color:  #98989A;
     padding-left: 0;
     margin-left: 0;
     text-align: left; 
@@ -137,6 +124,7 @@ footer{
 
 .container-4{
     padding: 100px;
+    color: #6F7271;
 }
 
 

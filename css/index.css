@@ -51,7 +51,7 @@ header a:hover {
 
 .container-1 h1{
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     text-align: left;
 }
 
@@ -78,7 +78,7 @@ header a:hover {
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    background-color: #666;
+    background-color: #6F7271;
     color: white;
     border-radius: 20px;
     border: none;
@@ -88,7 +88,7 @@ header a:hover {
 }
 
 .boton a:hover{
-    background-color: #999;
+    background-color: #98989A;
 }
 
 .container-2{
@@ -102,7 +102,7 @@ header a:hover {
 }
 
 .container-2 h2{
-    color: goldenrod;
+    color: #BC955C;
     font-size: 50px;
     text-align: center;
 }
@@ -141,11 +141,11 @@ header a:hover {
 }
 
 .container-2-1 h3{
-    color: red;
+    color: #9F2241;
 }
 
 .container-2-1 p{
-    color: #666;
+    color: #6F7271;
 }
 
 .container-2-2{
@@ -153,15 +153,15 @@ header a:hover {
 }
 
 .container-2-2 h1{
-    color: red;
+    color: #9F2241;
 }
 
 .container-2-2 h3{
-    color: gray;
+    color: #6F7271;
 }
 
 .container-3{
-    background-color: goldenrod;
+    background-color: #BC955C;
     color: white;
 }
 
@@ -176,12 +176,20 @@ header a:hover {
 }
 
 .container-3-2{
-    background-color: goldenrod;
+    background-color: #BC955C;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     text-align: center;
     
+}
+
+.container-3-2 h3{
+    font-size: 40px;
+}
+
+.container-3-2 p{
+    font-size: 30px;
 }
 
 @media (max-width: 1180px) {
@@ -201,13 +209,13 @@ header a:hover {
 }
 
 .container-4 h1{
-    color: #666;
+    color: #6F7271;
     font-size: 50px;
     text-align: left;
 }
 
 .container-4 p{
-    color: blue;
+    color:  #98989A;
     font-size: 20px;
     text-align: left;
 }
@@ -215,7 +223,7 @@ header a:hover {
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #666;
+    background-color:  #98989A;
     color: white;
     text-align: center;
     padding: 20px;
