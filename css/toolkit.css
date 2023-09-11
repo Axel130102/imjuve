@@ -48,6 +48,12 @@ header a:hover {
     background-color: red;
 }
 
+@media (max-width: 1200px) {
+    .container-1{
+        grid-template-columns: 1fr; 
+    }
+}
+
 .container-1 h1{
     color: goldenrod;
     font-size: 80px;
@@ -62,11 +68,18 @@ header a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 100px;
+    margin: 20px;
     row-gap: 30px;
 }
 
 .container-3 h3{
     color: #666;
+}
+
+@media (max-width: 1200px) {
+    .container-3{
+        grid-template-columns: 1fr; 
+    }
 }
 
 footer{
@@ -76,4 +89,10 @@ footer{
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr; 
+    }
 }

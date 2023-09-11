@@ -50,6 +50,12 @@ footer{
     padding: 20px;
 }
 
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr; 
+    }
+}
+
 .boton{
     margin-top: 30px;
     margin-bottom: 30px;
