@@ -236,19 +236,36 @@ header a:hover {
 }
 
 .container-4{
-    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 40px !important;
+    margin: 0;
+    padding: 0;
 }
 
 .container-4 h1{
+    padding-left: 40px;
     color: #6F7271;
     font-size: 50px;
     text-align: left;
 }
 
 .container-4 p{
+    padding-left: 40px;
     color:  #98989A;
     font-size: 20px;
     text-align: left;
+}
+
+.container-4 img {
+    max-width: 100%; /* El ancho de la imagen se ajustará al ancho del contenedor */
+    height: auto; /* Mantener la relación de aspecto original de la imagen */
+}
+
+@media (max-width: 1220px) {
+    .container-4 {
+        grid-template-columns: 1fr; 
+    }
 }
 
 footer{
