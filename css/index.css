@@ -46,7 +46,7 @@ header a:hover {
 
 .container-1{
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     background-color: #9F2241;
     display: grid;
     grid-template-columns: 1fr 1fr;
