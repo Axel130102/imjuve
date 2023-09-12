@@ -149,9 +149,9 @@ header a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 30px;
     text-align: center;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .container-2-1 img{
