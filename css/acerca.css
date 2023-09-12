@@ -117,6 +117,8 @@ footer{
     justify-content: center;
     align-items: center;
     padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     text-align: left;
 }
 
