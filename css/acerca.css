@@ -67,6 +67,7 @@ footer{
 }
 
 .container-1 h1{
+    padding-top: 40px;
     padding-left: 40px;
     color: #DDC9A3;
     font-size: 80px;
@@ -140,10 +141,14 @@ footer{
 }
 
 .container-3 h3 {
+    padding-right: 60px;
+    padding-left: 60px;
     color: #6F7271;
 }
 
 .container-3 p {
+    padding-right: 60px;
+    padding-left: 60px;
     color:  #98989A;
 }
 
