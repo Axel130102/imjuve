@@ -44,6 +44,29 @@ header a:hover {
     }
 }
 
+.boton{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.boton a{
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #6F7271;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.boton a:hover{
+    background-color: #98989A;
+}
+
 .container-1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -75,7 +98,6 @@ header a:hover {
     padding: 100px;
     color: #6F7271;
 }
-
 .container-3{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -91,13 +113,21 @@ header a:hover {
 .container-3 img{
     width: 300px;
     height: 400px;
+    justify-self: center; 
+    align-self: center;
 }   
+
+.imagen{
+    justify-self: center; 
+    align-self: center;
+}
 
 @media (max-width: 1200px) {
     .container-3{
         grid-template-columns: 1fr; 
     }
 }
+
 
 footer{
     display: grid;
