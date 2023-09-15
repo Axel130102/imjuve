@@ -263,6 +263,13 @@ header a:hover {
     height: auto; /* Mantener la relación de aspecto original de la imagen */
 }
 
+.container-5{
+    padding: 40px;
+    color:  #98989A;
+    font-size: 20px;
+    text-align: left;
+}
+
 @media (max-width: 1220px) {
     .container-4 {
         grid-template-columns: 1fr; 
