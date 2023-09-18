@@ -143,3 +143,8 @@ footer{
         grid-template-columns: 1fr; 
     }
 }
+
+footer img{
+    width: 300px;
+    height: 300px;
+}

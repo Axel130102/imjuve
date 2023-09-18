@@ -59,6 +59,11 @@ footer{
     }
 }
 
+footer img{
+    width: 300px;
+    height: 300px;
+}
+
 .container-1{
     padding-top: 40px;
     display: grid;
@@ -95,7 +100,7 @@ footer{
 
 .container-2 img{
     width: 200px;
-    height: 80px;
+    height: 200px;
 }
 
 .imagen2{
