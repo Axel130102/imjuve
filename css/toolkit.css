@@ -115,6 +115,8 @@ header a:hover {
     height: 400px;
     justify-self: center; 
     align-self: center;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
 }   
 
 .imagen{
