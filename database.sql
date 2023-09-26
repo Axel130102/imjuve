@@ -49,3 +49,8 @@ create table TOLLKIT (
 grant select, insert, update, delete on contacto_joven.* to 'contactojoven14092023'@localhost;
 
 INSERT INTO `usuarios`(`EMAIL`, `PASSWORD`) VALUES ('pruebas@imjuventud.gob.mx','$2y$10$fKZ76lJf3EYeSWXm/RKhAOKmHXObCy0zFsLJv1CSsCZxwN7UU4zNq');
+
+INSERT INTO `informacion_de_contacto`(`LINK`, `TELEFONO`, `CONTACTO`) VALUES ('https://www.google.com.mx/','55 7900 9669','Envía la palabra “CONTACTO” por WhatsApp al');
+
+INSERT INTO `horarios_de_atencion`(`HORARIO_DE_ATENCION`) VALUES ('Lunes a viernes de 10:00 a 14:00 hrs
+y de 16:00 a 20:00 hrs.');
