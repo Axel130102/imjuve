@@ -47,3 +47,5 @@ create table TOLLKIT (
 )CHARACTER SET utf8;
 
 grant select, insert, update, delete on contacto_joven.* to 'contactojoven14092023'@'localhost';
+
+INSERT INTO `usuarios`(`EMAIL`, `PASSWORD`) VALUES ('pruebas@imjuventud.gob.mx','$2y$10$fKZ76lJf3EYeSWXm/RKhAOKmHXObCy0zFsLJv1CSsCZxwN7UU4zNq');
