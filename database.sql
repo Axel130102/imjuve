@@ -1,7 +1,7 @@
 create user 'contactojoven14092023'@localhost IDENTIFIED by 'xXBp{]35NM9S';
 
 
-create database CONTACTO_JOVEN_PRUEBA;
+create database CONTACTO_JOVEN;
 use CONTACTO_JOVEN;
 
 create table USUARIOS (
