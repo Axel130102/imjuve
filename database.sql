@@ -54,3 +54,5 @@ INSERT INTO `informacion_de_contacto`(`LINK`, `TELEFONO`, `CONTACTO`) VALUES ('h
 
 INSERT INTO `horarios_de_atencion`(`HORARIO_DE_ATENCION`) VALUES ('Lunes a viernes de 10:00 a 14:00 hrs
 y de 16:00 a 20:00 hrs.');
+
+INSERT INTO `qr_code`(`CODIGO_QR`) VALUES ('../public/qr.png');
