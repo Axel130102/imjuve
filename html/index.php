@@ -27,7 +27,7 @@ include_once '../php/connection_global.php';
         <header>
             <ul class="myHeader">
                 <li><a href="index.php">Inicio</a></li>
-                <li><a href="acerca.php">¿Quinés somos?</a></li>
+                <li><a href="acerca.php">¿Quienés somos?</a></li>
                 <li><a href="toolkit.php">Toolkit</a></li>
                 <li><a href="politica.php">Politica de privacidad</a></li>
             </ul>
