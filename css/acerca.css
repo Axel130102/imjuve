@@ -95,25 +95,24 @@ footer img{
     
 .container-2{
     text-align: center;
-    padding-top: 20px;
+
 }
 
 .container-2 img{
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
 }
 
 .imagen2{
-    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    row-gap: 20px;
 }
 
 .imagen2 img{
-    margin-top: 20px;
-    height: 70px;
-    width: 150px;
+    margin-top: 30px;
+    height: 100px;
+    width: 200px;
     justify-self: center; /* Centra horizontalmente */
     align-self: center;   /* Centra verticalmente */
 }
@@ -143,7 +142,7 @@ footer img{
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
-    text-align: left;
+    text-align:justify;
 }
 
 .container-2-1 p {
@@ -170,6 +169,7 @@ footer img{
 }
 
 .container-3 p {
+    text-align:justify;
     padding-right: 60px;
     padding-left: 60px;
     color:  #98989A;
@@ -190,6 +190,7 @@ footer img{
 }
 
 .container-4{
+    text-align:justify;
     padding: 100px;
     color: #6F7271;
 }

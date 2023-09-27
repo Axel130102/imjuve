@@ -57,7 +57,7 @@ include_once '../php/connection_global.php';
                 ?>
                 <div class="qrBoton">
                     <div class="boton">
-                        <a href="<?= htmlspecialchars($fila['LINK']); ?>" target="_blank">Requiere apoyo</a>
+                        <a href="<?= htmlspecialchars($fila['LINK']); ?>" target="_blank">Requiero apoyo</a>
                     </div>
 
                     <?php

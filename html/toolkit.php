@@ -69,8 +69,11 @@ include_once '../php/connection_global.php';
           <div>
             <h3>
               <?= htmlspecialchars($fila['TITULO_MANUAL']); ?><br>
-              <?= htmlspecialchars($fila['DESCRIPCION_MANUAL']); ?>
             </h3>
+            <p>
+              <?= htmlspecialchars($fila['DESCRIPCION_MANUAL']); ?>
+            </p>
+
             <div class="boton">
               <a href="<?= htmlspecialchars($fila['MANUAL_PDF']); ?>" target="_blank">Descargar</a>
             </div>

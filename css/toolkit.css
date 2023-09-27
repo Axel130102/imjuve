@@ -95,9 +95,14 @@ header a:hover {
 }
 
 .container-2{
-    padding: 100px;
+    margin: 50px;
     color: #6F7271;
 }
+
+.container-2 h3{
+    text-align: center;
+}
+
 .container-3{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -108,6 +113,10 @@ header a:hover {
 
 .container-3 h3{
     color: #6F7271;
+}
+
+.container-3 p{
+    text-align: justify;
 }
 
 .container-3 img{

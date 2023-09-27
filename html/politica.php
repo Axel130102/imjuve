@@ -178,6 +178,8 @@ include_once '../php/connection_global.php';
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
+            <h4> ¿A partir de qué momento obtenemos información sobre ti?</h4>
+            <br>
             <p>Cuando contestas que SÍ quieres iniciar comunicación con CONTACTO JOVEN, después de que se despliega el
               link para acceder a este aviso de privacidad. </p>
           </div>
@@ -189,6 +191,8 @@ include_once '../php/connection_global.php';
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
+            <h4>¿Qué información personal recopilamos?</h4>
+            <br>
             <p>Recopilamos dos tipos de información: información demográfica y sus puntos de vista / experiencias /
               ideas / opiniones.
               <br><br>
@@ -205,6 +209,8 @@ include_once '../php/connection_global.php';
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
+            <h4>Edad mínima y consentimiento del tutor</h4>
+            <br>
             <p>U-Report sigue la Ley General de las Niñas, Niños y Adolescentes, y se apoya del Artículo 13 de la
               Convención sobre los Derechos del Niño en torno al derecho del niño a la libertad de expresión.
               <br><br>
@@ -229,6 +235,8 @@ include_once '../php/connection_global.php';
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
+            <h4>Necesidad y proporcionalidad</h4>
+            <br>
             <p>
               Las y los supervisoras de CONTACTO JOVEN, se asegurarán de que cada proceso de atención se evite recopilar
               datos confidenciales innecesarios o categorías especiales de datos personales u otros datos intrusivos.
@@ -268,6 +276,8 @@ include_once '../php/connection_global.php';
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
+            <h4>Propiedad de datos</h4>
+            <br>
             <p>
               UNICEF es el propietario exclusivo de los datos compilados, procesados ​​o recibidos por RapidPro. Esto
               incluye todos los datos, incluidos todos los archivos de texto, sonido, software o imagen recopilados y
@@ -306,6 +316,8 @@ include_once '../php/connection_global.php';
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
+            <h4>Protección de datos de canales y medidas de seguridad</h4>
+            <br>
             <p>A medida que la información se recopila y almacena a través de canales, es importante tener en cuenta las
               políticas de protección de datos de los canales que se implementarán desde el principio, particularmente
               aquellos artículos vinculados a la interacción de U-Partners. Los interesados ​​ya han acordado estas

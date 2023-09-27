@@ -94,6 +94,7 @@ header a:hover {
 }
 
 .container-4 p{
+    text-align:justify;
     padding-top: 50px;
     padding-left: 40px;
     padding-right: 40px;
