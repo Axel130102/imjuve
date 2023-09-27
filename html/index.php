@@ -168,9 +168,17 @@ include_once '../php/connection_global.php';
                 </div>
             </div>
 
+            <?php
+
+            $sql = "SELECT * FROM INFORMACION_DE_CONTACTO";
+            $resultado = mysqli_query($conexion, $sql);
+            $fila = mysqli_fetch_assoc($resultado);
+
+            ?>
+
             <div class="container-2-2">
                 <div class="boton">
-                    <a href="">Haz contacto</a>
+                    <a href="<?= htmlspecialchars($fila['LINK']); ?>" target="_blank">Haz contacto</a>
                 </div>
 
                 <h1>
