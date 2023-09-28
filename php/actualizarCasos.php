@@ -38,7 +38,7 @@ $stmt = $conexion->prepare('UPDATE CONTABILIDAD_DE_CASOS SET SECTOR_DE_LA_POBLAC
 $stmt->bind_param('ssssi', $poblacion, $casos, $anio, $ruta_imagen, $id);
 
 if ($stmt->execute()) {
-    echo "<script>alert('La actualización se realizó con éxito.');</script>";
+    // echo "<script>alert('La actualización se realizó con éxito.');</script>";
     echo "<script>window.location.href = '../cms/panel.php'</script>";
 } else {
     echo "<script>alert('Ocurrió un error en la actualización. Por favor, contacte al área de sistemas.');</script>";

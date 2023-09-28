@@ -181,19 +181,19 @@ include_once '../php/connection_global.php';
                     <div class="boton">
                         <a href="<?= htmlspecialchars($fila['LINK']); ?>" target="_blank">Haz contacto</a>
                     </div>
-                <?php
+                    <?php
 
-                $sql = "SELECT * FROM HORARIOS_DE_ATENCION";
-                $resultado = mysqli_query($conexion, $sql);
-                $fila = mysqli_fetch_assoc($resultado);
+                    $sql = "SELECT * FROM HORARIOS_DE_ATENCION";
+                    $resultado = mysqli_query($conexion, $sql);
+                    $fila = mysqli_fetch_assoc($resultado);
 
-                ?>
-                <h1>
-                    Horario de atención
-                </h1>
-                <h3>
-                    <?= htmlspecialchars($fila['HORARIO_DE_ATENCION']); ?>
-                </h3>
+                    ?>
+                    <h1>
+                        Horario de atención
+                    </h1>
+                    <h3>
+                        <?= htmlspecialchars($fila['HORARIO_DE_ATENCION']); ?>
+                    </h3>
                 </div>
             </section>
             <section>
@@ -332,7 +332,9 @@ include_once '../php/connection_global.php';
                             <?= htmlspecialchars($fila['TELEFONO']); ?> <br>
                         </h3>
 
-                        <h2><a href="<?= htmlspecialchars($fila['LINK']); ?>" target="_blank">Da Click aqui</a></h2>
+                        <div class="boton">
+                            <a href="<?= htmlspecialchars($fila['LINK']); ?>" target="_blank">DA CLIC AQUÍ</a>
+                        </div>
 
                     </div>
                 </footer>

@@ -35,7 +35,7 @@ $stmt = $conexion->prepare('INSERT INTO CONTABILIDAD_DE_CASOS (SECTOR_DE_LA_POBL
 $stmt->bind_param('ssss', $poblacion, $casos, $anio, $ruta_imagen);
 
 if ($stmt->execute()) {
-    echo "<script>alert('La inserción se realizó con éxito.');</script>";
+    // echo "<script>alert('La inserción se realizó con éxito.');</script>";
     echo "<script>window.location.href = '../cms/panel.php'</script>";
 } else {
     echo "<script>alert('Ocurrió un error en la inserción. Por favor, contacte al área de sistemas.');</script>";

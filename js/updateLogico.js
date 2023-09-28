@@ -1,5 +1,5 @@
 async function confirmarEliminar(event) {
-    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+    event.preventDefault();
 
     const result = await Swal.fire({
         title: '¿Estás seguro?',
@@ -18,6 +18,6 @@ async function confirmarEliminar(event) {
             'La información se ha eliminado correctamente.',
             'success'
         );
-        window.location.href = event.target.href; // Continúa con el enlace
+        window.location.href = event.target.href;
     }
 }

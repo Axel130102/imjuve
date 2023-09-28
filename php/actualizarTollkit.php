@@ -50,7 +50,7 @@ $stmt = $conexion->prepare('UPDATE TOLLKIT SET TITULO_MANUAL=?, DESCRIPCION_MANU
 $stmt->bind_param('ssssi', $titulo, $resena, $ruta, $ruta_imagen, $id);
 
 if ($stmt->execute()) {
-    echo "<script>alert('La actualización se realizó con éxito.');</script>";
+    // echo "<script>alert('La actualización se realizó con éxito.');</script>";
     echo "<script>window.location.href = '../cms/panel.php'</script>";
 } else {
     echo "<script>alert('Ocurrió un error en la actualización. Por favor, contacte al área de sistemas.');</script>";

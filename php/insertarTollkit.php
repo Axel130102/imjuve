@@ -49,7 +49,7 @@ $stmt = $conexion->prepare('INSERT INTO TOLLKIT (TITULO_MANUAL, DESCRIPCION_MANU
 $stmt->bind_param('ssss', $titulo, $resena, $ruta, $ruta_imagen);
 
 if ($stmt->execute()) {
-    echo "<script>alert('La inserción se realizó con éxito.');</script>";
+    // echo "<script>alert('La inserción se realizó con éxito.');</script>";
     echo "<script>window.location.href = '../cms/panel.php'</script>";
 } else {
     echo "<script>alert('Ocurrió un error en la inserción. Por favor, contacte al área de sistemas.');</script>";

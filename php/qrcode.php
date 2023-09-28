@@ -28,7 +28,7 @@ if (isset($_FILES['imagen']) && $_FILES['imagen']['error'] === UPLOAD_ERR_OK) {
     $stmt->bind_param('s', $ruta_imagen);
 
     if ($stmt->execute()) {
-        echo "<script>alert('La actualización se realizó con éxito.');</script>";
+        // echo "<script>alert('La actualización se realizó con éxito.');</script>";
         echo "<script>window.location.href = '../cms/panel.php'</script>";
     } else {
         echo "<script>alert('Ocurrió un error en la actualización. Si sigue presentando dificultades por favor, contacte al área de sistemas.');</script>";

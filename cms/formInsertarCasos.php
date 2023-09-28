@@ -35,8 +35,9 @@ if (!isset($email) || empty($email)) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="../js/alertInsert.js"></script>
 </head>
 
 <body>
@@ -52,8 +53,8 @@ if (!isset($email) || empty($email)) {
 
     <section>
         <article>
-            <h2 class="ms-5 mt-3 mb-4">Manual de usuario cargar archivos</h2>
-            <form method="POST" action="../php/insertarCasos.php" enctype="multipart/form-data" class="container-md">
+            <h2 class="ms-5 mt-3 mb-4 text-center">Cargar nuevos casos atendidos</h2>
+            <form method="POST" action="../php/insertarCasos.php" enctype="multipart/form-data" class="container-md" id="forminsertarCasos">
                 <div class="input-group mb-3 ms-4">
                     <label class="input-group-text" for="imagen-casos">Cargar imagen</label>
                     <input type="file" class="form-control me-5" id="imagen-casos" name="imagen-casos" accept="image/*">
@@ -70,8 +71,8 @@ if (!isset($email) || empty($email)) {
                     <label class="input-group-text" for="anio">Año</label>
                     <input type="text" class="form-control me-5" id="anio" name="anio">
                 </div>
-                <div class="d-flex justify-content-end mb-2 me-4">
-                    <button class="btn btn-success pull-right justify-content-end btn-sm" type="submit">Insertar nuevo número de casos</button>
+                <div class="d-flex justify-content-center mb-2 me-4">
+                    <button class="btn btn-success pull-right justify-content-center btn-sm" type="submit" id="enviar-casos" onclick="Aler(insertarCasos)">Insertar nuevo número de casos</button>
                 </div>
             </form>
         </article>

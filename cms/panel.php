@@ -32,13 +32,14 @@ if (!isset($email) || empty($email)) {
     <title>Contenedor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/panel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="../js/updateLogico.js"></script>
+    <script src="../js/alert.js"></script>
 </head>
 
 <body>
@@ -66,7 +67,8 @@ if (!isset($email) || empty($email)) {
             ?>
             <article>
                 <h2 class="text-center">Actualizar código QR</h2>
-                <form method="POST" action="../php/qrcode.php" enctype="multipart/form-data" class="container-md">
+                <form method="POST" action="../php/qrcode.php" enctype="multipart/form-data"
+                    class="container-md" id="formQr">
                     <div class="input-group mb-3 ms-4">
                         <!-- <label class="input-group-text" for="imagen_qr"></label> -->
                         <input type="file" class="form-control me-5" id="imagen_qr" name="imagen"
@@ -78,7 +80,7 @@ if (!isset($email) || empty($email)) {
                     </div>
                     <div class="d-flex justify-content-end mb-2 me-4">
                         <button class="btn btn-success pull-right justify-content-end btn-sm" type="submit"
-                            id="enviar-formularo">Actualizar QR</button>
+                            id="enviar-qr" onclick="Alert(qr)">Actualizar QR</button>
                     </div>
                 </form>
             </article>
@@ -94,7 +96,7 @@ if (!isset($email) || empty($email)) {
             ?>
             <article>
                 <h2 class="text-center">Horario de atención</h2>
-                <form method="POST" action="../php/actualizarHorario.php" class="container-md">
+                <form method="POST" action="../php/actualizarHorario.php" class="container-md" id="formHorario">
                     <div class="form-floating mb-3 ms-4 me-4">
                         <textarea class="form-control" id="horario" name="horario"
                             style="height: 100px"><?= $fila['HORARIO_DE_ATENCION'] ?></textarea>
@@ -102,7 +104,7 @@ if (!isset($email) || empty($email)) {
                     </div>
                     <div class="d-flex justify-content-end mb-2 me-4">
                         <button class="btn btn-success pull-right justify-content-end btn-sm" type="submit"
-                            id="enviar-formularo">Actualizar horario de atención</button>
+                            id="enviar-horario" onclick="Alert(horario)">Actualizar horario de atención</button>
                     </div>
                 </form>
             </article>
@@ -118,7 +120,7 @@ if (!isset($email) || empty($email)) {
             ?>
             <article>
                 <h2 class="text-center">Información de contacto</h2>
-                <form method="POST" action="../php/actualizarDeContacto.php" class="container-md">
+                <form method="POST" action="../php/actualizarDeContacto.php" class="container-md" id="formContacto">
                     <div class=" input-group mb-3 ms-4">
                         <label class="input-group-text" for="link">Link del botón de ayuda</label>
                         <input type="text" class="form-control me-5" id="link" name="link" value="<?= $fila['LINK'] ?>">
@@ -135,7 +137,7 @@ if (!isset($email) || empty($email)) {
                     </div>
                     <div class="d-flex justify-content-end mb-2 me-4">
                         <button class="btn btn-success pull-right justify-content-end btn-sm" type="submit"
-                            id="enviar-formularo">Actualizar información de contacto</button>
+                            id="enviar-contacto" onclick="Alert(contacto)">Actualizar información de contacto</button>
                     </div>
                 </form>
             </article>
@@ -204,7 +206,7 @@ if (!isset($email) || empty($email)) {
                     </table>
                 </div>
                 <div class="d-flex justify-content-end container-md">
-                    <a href="formInsertarCasos.php" class="mb-2 me-3 btn btn-success btn-sm">Agregar nueva categoría de
+                    <a href="formInsertarCasos.php" class="mb-2 me-4 btn btn-success btn-sm">Agregar nueva categoría de
                         casos</a>
                 </div>
             </article>

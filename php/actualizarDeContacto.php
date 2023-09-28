@@ -20,7 +20,7 @@ $stmt = $conexion->prepare('UPDATE informacion_de_contacto SET LINK=?, TELEFONO=
 $stmt->bind_param('sss', $link, $phone, $contacto);
 
 if ($stmt->execute()) {
-    echo "<script>alert('La actualización se realizó con éxito.');</script>";
+    // echo "<script>alert('La actualización se realizó con éxito.');</script>";
     echo "<script>window.location.href = '../cms/panel.php'</script>";
 } else {
     echo "<script>alert('Ocurrió un error en la actualización. Por favor, contacte al área de sistemas.');</script>";

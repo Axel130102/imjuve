@@ -35,8 +35,8 @@ if (!isset($email) || empty($email)) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="../js/validationForm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/alert.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
@@ -71,7 +71,7 @@ if (!isset($email) || empty($email)) {
         <article class="container-md">
             <h2 class="ms-4 text-center">Actualizar cifra de datos</h2>
             <form method="POST" action="../php/actualizarCasos.php?id=<?= $fila['ID_CASOS'] ?>"
-                enctype="multipart/form-data" name="form">
+                enctype="multipart/form-data" name="form" id="formActualizarCasos">
                 <div class=" input-group mb-3 ms-4">
                     <label class="input-group-text" for="sector-poblacion">Sector de la población</label>
                     <input type="text" class="form-control me-5" id="sector-poblacion" name="sector-poblacion"
@@ -101,7 +101,7 @@ if (!isset($email) || empty($email)) {
                     <img src="<?php echo $fila['IMAGEN_CASOS'] ?>" width="150" height="150" alt="qr">
                 </div>
                 <div class="d-flex justify-content-center mb-2 me-4">
-                    <button class="btn btn-success pull-right justify-content-center btn-sm" type="submit">Actualizar
+                    <button class="btn btn-success pull-right justify-content-center btn-sm" type="submit" id="enviarCasosActualizados" onclick="Alert(actualizarCasos)">Actualizar
                         cifra de datos</button>
                 </div>
             </form>
