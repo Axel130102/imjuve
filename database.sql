@@ -56,3 +56,9 @@ INSERT INTO `horarios_de_atencion`(`HORARIO_DE_ATENCION`) VALUES ('Lunes a viern
 y de 16:00 a 20:00 hrs.');
 
 INSERT INTO `qr_code`(`CODIGO_QR`) VALUES ('../public/qr.png');
+
+INSERT INTO `contabilidad_de_casos`(`SECTOR_DE_LA_POBLACION`, `NUMERO_DE_CASOS`, `ANIO`, `IMAGEN_CASOS`) 
+VALUES ('Casos acumulados','76,868','2021 - 2023','../public/recurso19.png'),
+('Casos del año en curso','5,515','2023','../public/recurso35.png'),
+('Casos de mujeres','3,315','2023','../public/recurso19.png'),
+('Casos de hombres','2,200','2023','../public/recurso18.png');

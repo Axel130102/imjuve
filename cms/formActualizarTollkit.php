@@ -42,7 +42,7 @@ if (!isset($email) || empty($email)) {
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light ms-3">
         <div class="container-fluid">
-            <abbr title="Actualizar"><a class="navbar-brand" href="panel.php">
+            <abbr title="Regresar al panel"><a class="navbar-brand" href="panel.php">
                     <img src="../public/contacto_joven_logo2.png" width="40px" height="40px" alt="">
                 </a></abbr>
             <div class="d-flex justify-content-end mb-2">
@@ -50,7 +50,7 @@ if (!isset($email) || empty($email)) {
             </div>
     </nav>
 
-    <section>
+    <section class="container-md">
         <?php
 
         $sql = "SELECT * FROM TOLLKIT";
@@ -68,7 +68,7 @@ if (!isset($email) || empty($email)) {
 
         ?>
         <article>
-            <h2 class="ms-4">Manual de usuario cargar archivos</h2>
+            <h2 class="ms-4 text-center">Manual de usuario cargar archivos</h2>
             <form method="POST" action="../php/actualizarTollkit.php?id=<?= $filas['ID_TOLLKIT'] ?>" enctype="multipart/form-data">
                 <div class="input-group mb-3 ms-4">
                     <label class="input-group-text" for="manual-pdf">Cargar manual PDF</label>
@@ -76,16 +76,26 @@ if (!isset($email) || empty($email)) {
                         accept="application/pdf">
                 </div>
                 <div class="input-group mb-3 ms-4">
+                    <label class="input-group-text" for="manual-actual">Ruta del manual actual</label>
+                    <input type="text" class="form-control me-2" id="manual-actual" name="manual-actual"
+                        value="<?= $filas['MANUAL_PDF'] ?>" readonly>
+                </div>
+                <div class="input-group mb-3 ms-4">
                     <label class="input-group-text" for="imagen-manual">Cargar imagen del manual</label>
                     <input type="file" class="form-control me-5" id="imagen-manual" name="imagen-manual"
                         accept="image/*">
                 </div>
                 <div class="input-group mb-3 ms-4">
-                    <label class="input-group-text" for="imagen-manual">Imagen del manual de
+                    <label class="input-group-text" for="imagen-actual">Ruta de la imagen actual</label>
+                    <input type="text" class="form-control me-2" id="imagen-actual" name="imagen-actual"
+                        value="<?= $filas['PORTADA_MANUAL'] ?>" readonly>
+                </div>
+                <div class="input-group mb-3 ms-4">
+                    <label class="input-group-text" for="imagen-actual">Imagen del manual de
                         usuario</label>
                     <img src="<?php echo $filas['PORTADA_MANUAL'] ?>" width="150" height="150"
-                        alt="imagen del manual de usuario" id="imagen-manual"
-                        name="imagen-manual">
+                        alt="imagen del manual de usuario" id="imagen-actual"
+                        name="imagen-actual">
                 </div>
                 <div class=" input-group mb-3 ms-4">
                     <label class="input-group-text" for="titulo-manual">Titulo del manual de usuario</label>
@@ -94,11 +104,11 @@ if (!isset($email) || empty($email)) {
                 </div>
                 <div class="form-floating mb-3 ms-4 me-4">
                     <textarea class="form-control" id="resena-manual" name="resena-manual"
-                        style="height: 100px"><?= $filas['DESCRIPCION_MANUAL'] ?></textarea>
+                        style="height: 80px"><?= $filas['DESCRIPCION_MANUAL'] ?></textarea>
                     <label for="resena-manual">Descripción del manual de usuario</label>
                 </div>
-                <div class="d-flex justify-content-end mb-2 me-4">
-                    <button class="btn btn-success pull-right justify-content-end btn-sm" type="submit">Actualizar
+                <div class="d-flex justify-content-center mb-2 me-4">
+                    <button class="btn btn-success pull-right justify-content-center btn-sm" type="submit">Actualizar
                         manual de usuario</button>
                 </div>
             </form>

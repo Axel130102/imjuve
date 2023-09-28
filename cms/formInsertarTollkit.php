@@ -42,7 +42,7 @@ if (!isset($email) || empty($email)) {
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light ms-3">
         <div class="container-fluid">
-            <abbr title="Actualizar"><a class="navbar-brand" href="panel.php">
+            <abbr title="Regresar al panel"><a class="navbar-brand" href="panel.php">
                     <img src="../public/contacto_joven_logo2.png" width="40px" height="40px" alt="">
                 </a></abbr>
             <div class="d-flex justify-content-end mb-2">

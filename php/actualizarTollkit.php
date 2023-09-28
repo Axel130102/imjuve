@@ -4,38 +4,37 @@ require_once 'connection_global.php';
 
 $id = $_GET['id'];
 
-if (isset($_FILES['manual-pdf'])) {
+if (isset($_FILES['manual-pdf']) && $_FILES['manual-pdf']['size'] > 0) {
     $documento = $_FILES['manual-pdf'];
     $nombre_base = basename($_FILES['manual-pdf']['name']);
     $ruta = "../public/pdf/" . $nombre_base;
     $subir_archivo = move_uploaded_file($_FILES['manual-pdf']['tmp_name'], $ruta);
     if (!$subir_archivo) {
-        $sizeMB = $_FILES['manual-pdf']['size'] / (1024 * 1024);
-        echo "<script>alert('La revista no puede ser publicada, el tamaño máximo del archivo PDF es de 50MB. Si presenta este error al actualizar solamente la imagen, por favor, actualice la imgen y el archivo pdf.');</script>";
+        echo "<script>alert('Error al subir la imagen.');</script>";
         echo "<script>window.location.href = '../cms/panel.php'</script>";
         exit;
     }
-
 } else {
-    echo "Error: archivo PDF no encontrado";
-    exit;
+    // Si no se envió un archivo o está vacío, asigna un valor predeterminado a $ruta_imagen (por ejemplo, una cadena vacía).
+    $ruta = $_POST['manual-actual'];
 }
 
-if (isset($_FILES['imagen-manual'])) {
+
+if (isset($_FILES['imagen-manual']) && $_FILES['imagen-manual']['size'] > 0) {
     $imagen = $_FILES['imagen-manual'];
     $nombre_base = basename($_FILES['imagen-manual']['name']);
     $ruta_imagen = "../public/" . $nombre_base;
     $subir_imagen = move_uploaded_file($_FILES['imagen-manual']['tmp_name'], $ruta_imagen);
     if (!$subir_imagen) {
-        echo "<script>alert('Error al subir la imagen..');</script>";
+        echo "<script>alert('Error al subir la imagen.');</script>";
         echo "<script>window.location.href = '../cms/panel.php'</script>";
         exit;
     }
 } else {
-    echo "<script>alert('Error imagen no encontrada.');</script>";
-    echo "<script>window.location.href = '../cms/panel.php'</script>";
-    exit;
+    // Si no se envió un archivo o está vacío, asigna un valor predeterminado a $ruta_imagen (por ejemplo, una cadena vacía).
+    $ruta_imagen = $_POST['imagen-actual'];
 }
+
 
 $titulo = filter_var($_POST['titulo-manual'], FILTER_SANITIZE_STRING);
 $resena = filter_var($_POST['resena-manual'], FILTER_SANITIZE_STRING);

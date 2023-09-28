@@ -4,7 +4,8 @@ require_once 'connection_global.php';
 
 $id = $_GET['id'];
 
-if (isset($_FILES['imagen-casos'])) {
+// Verificar si se envió un archivo y si no está vacío
+if (isset($_FILES['imagen-casos']) && $_FILES['imagen-casos']['size'] > 0) {
     $imagen = $_FILES['imagen-casos'];
     $nombre_base = basename($_FILES['imagen-casos']['name']);
     $ruta_imagen = "../public/" . $nombre_base;
@@ -15,15 +16,15 @@ if (isset($_FILES['imagen-casos'])) {
         exit;
     }
 } else {
-    echo "<script>alert('Error imagen no encontrada.');</script>";
-    echo "<script>window.location.href = '../cms/panel.php'</script>";
-    exit;
+    // Si no se envió un archivo o está vacío, asigna un valor predeterminado a $ruta_imagen (por ejemplo, una cadena vacía).
+    $ruta_imagen = $_POST['imagen-actual'];
 }
 
 // Obtener los datos del tipo text del formulario
 $poblacion = filter_var($_POST['sector-poblacion'], FILTER_SANITIZE_STRING);
 $casos = filter_var($_POST['numero-casos'], FILTER_SANITIZE_STRING);
 $anio = filter_var($_POST['anio'], FILTER_SANITIZE_STRING);
+// $ruta_imagen_actual = filter_var($_POST['imagen-actual'], FILTER_SANITIZE_STRING);
 
 // Verificar si algún dato está vacío
 if (!$poblacion || !$casos || !$anio) {

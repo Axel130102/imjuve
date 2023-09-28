@@ -36,13 +36,14 @@ if (!isset($email) || empty($email)) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/validationForm.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light ms-3">
         <div class="container-fluid">
-            <abbr title="Actualizar"><a class="navbar-brand" href="panel.php">
+            <abbr title="Regresar al panel"><a class="navbar-brand" href="panel.php">
                     <img src="../public/contacto_joven_logo2.png" width="40px" height="40px" alt="">
                 </a></abbr>
             <div class="d-flex justify-content-end mb-2">
@@ -67,14 +68,14 @@ if (!isset($email) || empty($email)) {
         $fila = mysqli_fetch_assoc($resultado);
 
         ?>
-        <article>
-            <h2 class="ms-4">Actualizar cifra de datos</h2>
+        <article class="container-md">
+            <h2 class="ms-4 text-center">Actualizar cifra de datos</h2>
             <form method="POST" action="../php/actualizarCasos.php?id=<?= $fila['ID_CASOS'] ?>"
-                enctype="multipart/form-data">
+                enctype="multipart/form-data" name="form">
                 <div class=" input-group mb-3 ms-4">
-                <label class="input-group-text" for="sector-poblacion">Sector de la población</label>
-                <input type="text" class="form-control me-5" id="sector-poblacion" name="sector-poblacion"
-                    value="<?= $fila['SECTOR_DE_LA_POBLACION'] ?>">
+                    <label class="input-group-text" for="sector-poblacion">Sector de la población</label>
+                    <input type="text" class="form-control me-5" id="sector-poblacion" name="sector-poblacion"
+                        value="<?= $fila['SECTOR_DE_LA_POBLACION'] ?>">
                 </div>
                 <div class=" input-group mb-3 ms-4">
                     <label class="input-group-text" for="numero-casos">Numero de casos</label>
@@ -86,14 +87,22 @@ if (!isset($email) || empty($email)) {
                     <input type="text" class="form-control me-5" id="anio" name="anio" value="<?= $fila['ANIO'] ?>">
                 </div>
                 <div class="input-group mb-3 ms-4">
-                    <label class="input-group-text" for="imagen-casos">Actualizar imagen</label>
+                    <!-- <label class="input-group-text" for="imagen-casos">Actualizar imagen</label> -->
                     <input type="file" class="form-control me-5" id="imagen-casos" name="imagen-casos"
-                        accept="image/jpeg,image/jpg,image/png">
+                        accept="image/jpeg,image/jpg,image/png" autofocus>
                 </div>
-                <div class="d-flex justify-content-end mb-2 me-4">
-                    <button class="btn btn-success pull-right justify-content-end btn-sm" type="submit">Actualizar
-                        manual de
-                        usuario</button>
+                <div class="input-group mb-3 ms-4">
+                    <label class="input-group-text" for="imagen-actual">Ruta de imagen actual</label>
+                    <input type="text" class="form-control me-2" id="imagen-actual" name="imagen-actual"
+                        value="<?= $fila['IMAGEN_CASOS'] ?>" readonly>
+                </div>
+                <div class="input-group mb-3 ms-4">
+                    <label class="input-group-text" for="qr">Imagen actual</label>
+                    <img src="<?php echo $fila['IMAGEN_CASOS'] ?>" width="150" height="150" alt="qr">
+                </div>
+                <div class="d-flex justify-content-center mb-2 me-4">
+                    <button class="btn btn-success pull-right justify-content-center btn-sm" type="submit">Actualizar
+                        cifra de datos</button>
                 </div>
             </form>
         </article>

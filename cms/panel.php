@@ -36,7 +36,7 @@ if (!isset($email) || empty($email)) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="../js/updateLogico.js"></script>
 </head>
@@ -54,7 +54,7 @@ if (!isset($email) || empty($email)) {
     </nav>
 
     <div class="container-fluid mt-2">
-        <h1 class="fs-1 ms-2">Panel administrativo Contacto Joven.</h1>
+        <h1 class="fs-1 ms-2">Panel administrativo Contacto Joven</h1>
         <br>
         <section>
             <?php
@@ -65,10 +65,10 @@ if (!isset($email) || empty($email)) {
 
             ?>
             <article>
-                <h2 class="text-center">Código QR</h2>
+                <h2 class="text-center">Actualizar código QR</h2>
                 <form method="POST" action="../php/qrcode.php" enctype="multipart/form-data" class="container-md">
                     <div class="input-group mb-3 ms-4">
-                        <label class="input-group-text" for="imagen_qr">Actualizar código QR</label>
+                        <!-- <label class="input-group-text" for="imagen_qr"></label> -->
                         <input type="file" class="form-control me-5" id="imagen_qr" name="imagen"
                             accept="image/jpeg,image/jpg,image/png">
                     </div>
@@ -83,39 +83,7 @@ if (!isset($email) || empty($email)) {
                 </form>
             </article>
         </section>
-        <section>
-            <?php
-
-            $sql = "SELECT * FROM INFORMACION_DE_CONTACTO";
-            $resultado = mysqli_query($conexion, $sql);
-            $fila = mysqli_fetch_assoc($resultado);
-
-            ?>
-            <article>
-                <h2 class="text-center">Información de contacto</h2>
-                <form method="POST" action="../php/actualizarDeContacto.php" class="container-md">
-                    <div class=" input-group mb-3 ms-4">
-                        <label class="input-group-text" for="link">Link del botón de ayuda</label>
-                        <input type="text" class="form-control me-5" id="link" name="link" value="<?= $fila['LINK'] ?>">
-                    </div>
-                    <div class="input-group mb-3 ms-4">
-                        <label class="input-group-text" for="telefono">Teléfono</label>
-                        <input type="text" class="form-control me-5" name="telefono" id="telefono"
-                            value="<?= $fila['TELEFONO'] ?>">
-                    </div>
-                    <div class="form-floating mb-3 ms-4 me-4">
-                        <textarea class="form-control" id="informacion-contacto" name="informacion-contacto"
-                            style="height: 100px"><?= $fila['CONTACTO'] ?></textarea>
-                        <label for="informacion-contacto">Información de contacto</label>
-                    </div>
-                    <div class="d-flex justify-content-end mb-2 me-4">
-                        <button class="btn btn-success pull-right justify-content-end btn-sm" type="submit"
-                            id="enviar-formularo">Actualizar información de contacto</button>
-                    </div>
-                </form>
-            </article>
-            <hr>
-        </section>
+        <hr>
         <section>
             <?php
 
@@ -135,6 +103,39 @@ if (!isset($email) || empty($email)) {
                     <div class="d-flex justify-content-end mb-2 me-4">
                         <button class="btn btn-success pull-right justify-content-end btn-sm" type="submit"
                             id="enviar-formularo">Actualizar horario de atención</button>
+                    </div>
+                </form>
+            </article>
+            <hr>
+        </section>
+        <section>
+            <?php
+
+            $sql = "SELECT * FROM INFORMACION_DE_CONTACTO";
+            $resultado = mysqli_query($conexion, $sql);
+            $fila = mysqli_fetch_assoc($resultado);
+
+            ?>
+            <article>
+                <h2 class="text-center">Información de contacto</h2>
+                <form method="POST" action="../php/actualizarDeContacto.php" class="container-md">
+                    <div class=" input-group mb-3 ms-4">
+                        <label class="input-group-text" for="link">Link del botón de ayuda</label>
+                        <input type="text" class="form-control me-5" id="link" name="link" value="<?= $fila['LINK'] ?>">
+                    </div>
+                    <div class="form-floating mb-3 ms-4 me-4">
+                        <textarea class="form-control" id="informacion-contacto" name="informacion-contacto"
+                            style="height: 100px"><?= $fila['CONTACTO'] ?></textarea>
+                        <label for="informacion-contacto">Información de contacto</label>
+                    </div>
+                    <div class="input-group mb-3 ms-4">
+                        <label class="input-group-text" for="telefono">Teléfono</label>
+                        <input type="text" class="form-control me-5" name="telefono" id="telefono"
+                            value="<?= $fila['TELEFONO'] ?>">
+                    </div>
+                    <div class="d-flex justify-content-end mb-2 me-4">
+                        <button class="btn btn-success pull-right justify-content-end btn-sm" type="submit"
+                            id="enviar-formularo">Actualizar información de contacto</button>
                     </div>
                 </form>
             </article>
@@ -191,7 +192,9 @@ if (!isset($email) || empty($email)) {
                                     </td>
                                     <td>
                                         <a href="../php/updateLogicoCasos.php?id=<?= $fila['ID_CASOS'] ?>"
-                                            class="btn btn-danger btn-sm" method="post" data-confirm="¿Estás seguro de que quieres eliminar este ítem de casos?" onclick="return confirmar()">Eliminar</a>
+                                            class="btn btn-danger btn-sm"
+                                            onclick="return confirmarEliminar(event)">Eliminar</a>
+
                                     </td>
                                 </tr>
                                 <?php
@@ -200,8 +203,8 @@ if (!isset($email) || empty($email)) {
                         </tbody>
                     </table>
                 </div>
-                <div class="d-flex justify-content-end">
-                    <a href="formInsertarCasos.php" class="mb-2 me-5 btn btn-success btn-sm">Agregar nuevo ítem de
+                <div class="d-flex justify-content-end container-md">
+                    <a href="formInsertarCasos.php" class="mb-2 me-3 btn btn-success btn-sm">Agregar nueva categoría de
                         casos</a>
                 </div>
             </article>
@@ -257,7 +260,8 @@ if (!isset($email) || empty($email)) {
                                     </td>
                                     <td>
                                         <a href="../php/updateLogicoTollkit.php?id=<?php echo $fila['ID_TOLLKIT'] ?>"
-                                            class="btn btn-danger btn-sm" method="post" onclick="return confirmar()">Eliminar</a>
+                                            class="btn btn-danger btn-sm"
+                                            onclick="return confirmarEliminar(event)">Eliminar</a>
                                     </td>
                                 </tr>
                                 <?php
@@ -266,8 +270,8 @@ if (!isset($email) || empty($email)) {
                         </tbody>
                     </table>
                 </div>
-                <div class="d-flex justify-content-end">
-                    <a href="formInsertarTollkit.php" class="mb-4 me-5 btn btn-success btn-sm">Agregar nuevo manual</a>
+                <div class="d-flex justify-content-end container-md">
+                    <a href="formInsertarTollkit.php" class="mb-4 me-2 btn btn-success btn-sm">Agregar nuevo manual</a>
                 </div>
             </article>
         </section>
