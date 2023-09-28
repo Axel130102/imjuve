@@ -13,11 +13,14 @@ async function confirmarEliminar(event) {
     });
 
     if (result.isConfirmed) {
-        await Swal.fire(
-            'Eliminado',
-            'La información se ha eliminado correctamente.',
-            'success'
-        );
+        await Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Eliminado',
+            text: 'La información se ha eliminado correctamente.',
+            showConfirmButton: false,
+            timer: 2000
+        })
         window.location.href = event.target.href;
     }
 }

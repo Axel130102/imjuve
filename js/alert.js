@@ -2,7 +2,8 @@ function Alert(qr){
     Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'La información se ha actualizado correctamente',
+        title: 'Perfecto',
+        text: 'La información se ha actualizado correctamente',
         showConfirmButton: false,
         timer: 2000
       })
@@ -21,12 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function Alert(horario){
     Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'La información se ha actualizado correctamente',
-        showConfirmButton: false,
-        timer: 2000
-      })
+      position: 'center',
+      icon: 'success',
+      title: 'Perfecto',
+      text: 'La información se ha actualizado correctamente.',
+      showConfirmButton: false,
+      timer: 2000
+  })
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -42,12 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function Alert(contatco){
     Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'La información se ha actualizado correctamente',
-        showConfirmButton: false,
-        timer: 2000
-      })
+      position: 'center',
+      icon: 'success',
+      title: 'Perfecto',
+      text: 'La información se ha actualizado correctamente.',
+      showConfirmButton: false,
+      timer: 2000
+  })
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -63,12 +66,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function Alert(actualizarCasos){
     Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'La información se ha actualizado correctamente',
-        showConfirmButton: false,
-        timer: 2000
-      })
+      position: 'center',
+      icon: 'success',
+      title: 'Perfecto',
+      text: 'La información se ha actualizado correctamente.',
+      showConfirmButton: false,
+      timer: 2000
+  })
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -84,12 +88,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function Alert(actualizarToolkit){
     Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'La información se ha actualizado correctamente',
-        showConfirmButton: false,
-        timer: 2000
-      })
+      position: 'center',
+      icon: 'success',
+      title: 'Perfecto',
+      text: 'La información se ha actualizado correctamente.',
+      showConfirmButton: false,
+      timer: 2000
+  })
 }
 
 document.addEventListener('DOMContentLoaded', function() {

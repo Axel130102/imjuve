@@ -2,7 +2,8 @@ function Alert(insertarCasos){
     Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'La información se ha insertado correctamente',
+        title: 'Perfecto',
+        text: 'La información se ha insertado correctamente',
         showConfirmButton: false,
         timer: 2000
       })
@@ -23,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'La información se ha insertado correctamente',
+        title: 'Perfecto',
+        text: 'La información se ha insertado correctamente',
         showConfirmButton: false,
         timer: 2000
       })
