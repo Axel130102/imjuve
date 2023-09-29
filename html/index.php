@@ -329,8 +329,8 @@ include_once '../php/connection_global.php';
 
                         <h3>
                             <?= htmlspecialchars($fila['CONTACTO']); ?> <br>
-                            <?= htmlspecialchars($fila['TELEFONO']); ?> <br>
-                        </h3>
+                            <?= htmlspecialchars($fila['TELEFONO']); ?> o <br>
+                        </h3> 
 
                         <div class="boton">
                             <a href="<?= htmlspecialchars($fila['LINK']); ?>" target="_blank">DA CLIC AQUÍ</a>
