@@ -1,8 +1,8 @@
 <?php
-$host = "127.0.0.1";
-$user = "root";
-$password = "";
-$database = "CONTACTO_JOVEN";
+$host = "localhost";
+$user = "imjuvegobmx_testcontactojoven";
+$password = "kQNW]LU)j7CE";
+$database ="imjuvegobmx_testcontactojoven";
 
 $conexion = mysqli_connect($host, $user, $password, $database);
 

@@ -3,11 +3,11 @@ require 'connection_global.php';
 session_start();
 
 $email = $_POST['email'];
-$password = $_POST['password'];
+$password = $_POST['PASSWORD'];
 
 $_SESSION['email'] = $email;
 
-$conexion = mysqli_connect("localhost", "root", "", "contacto_joven");
+$conexion = mysqli_connect("localhost", "imjuvegobmx_testcontactojoven", "kQNW]LU)j7CE", "imjuvegobmx_testcontactojoven");
 
 // Obtener el hash de la contraseña almacenada en la base de datos
 $consulta = "SELECT PASSWORD FROM USUARIOS WHERE EMAIL='$email'";

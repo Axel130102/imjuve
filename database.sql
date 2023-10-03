@@ -48,16 +48,16 @@ create table TOLLKIT (
 
 -- grant select, insert, update, delete on contacto_joven.* to 'contactojoven14092023'@localhost;
 
-INSERT INTO `usuarios`(`EMAIL`, `PASSWORD`) VALUES ('pruebas@imjuventud.gob.mx','$2y$10$fKZ76lJf3EYeSWXm/RKhAOKmHXObCy0zFsLJv1CSsCZxwN7UU4zNq');
+INSERT INTO `USUARIOS`(`EMAIL`, `PASSWORD`) VALUES ('pruebas@imjuventud.gob.mx','$2y$10$fKZ76lJf3EYeSWXm/RKhAOKmHXObCy0zFsLJv1CSsCZxwN7UU4zNq');
 
-INSERT INTO `informacion_de_contacto`(`LINK`, `TELEFONO`, `CONTACTO`) VALUES ('https://www.google.com.mx/','55 7900 9669','Envía la palabra “CONTACTO” por WhatsApp al');
+INSERT INTO `INFORMACION_DE_CONTACTO`(`LINK`, `TELEFONO`, `CONTACTO`) VALUES ('https://www.google.com.mx/','55 7900 9669','Envía la palabra “CONTACTO” por WhatsApp al');
 
-INSERT INTO `horarios_de_atencion`(`HORARIO_DE_ATENCION`) VALUES ('Lunes a viernes de 10:00 a 14:00 hrs
+INSERT INTO `HORARIOS_DE_ATENCION`(`HORARIO_DE_ATENCION`) VALUES ('Lunes a viernes de 10:00 a 14:00 hrs
 y de 16:00 a 20:00 hrs.');
 
-INSERT INTO `qr_code`(`CODIGO_QR`) VALUES ('../public/qr.png');
+INSERT INTO `QR_CODE`(`CODIGO_QR`) VALUES ('../public/qr.png');
 
-INSERT INTO `contabilidad_de_casos`(`SECTOR_DE_LA_POBLACION`, `NUMERO_DE_CASOS`, `ANIO`, `IMAGEN_CASOS`) 
+INSERT INTO `CONTABILIDAD_DE_CASOS`(`SECTOR_DE_LA_POBLACION`, `NUMERO_DE_CASOS`, `ANIO`, `IMAGEN_CASOS`) 
 VALUES ('Casos acumulados','76,868','2021 - 2023','../public/recurso19.png'),
 ('Casos del año en curso','5,515','2023','../public/recurso35.png'),
 ('Casos de mujeres','3,315','2023','../public/recurso19.png'),
