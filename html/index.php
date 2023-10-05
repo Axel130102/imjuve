@@ -261,7 +261,15 @@ include_once '../php/connection_global.php';
                             Facebook
                             Messenger).
                         </p>
-                        <h1>¿Quién brinda el acompañamiento? </h1>
+                        
+                    </div>
+                    <div>
+                        <img src="../public/recurso21.png">
+                    </div>
+                </div>
+
+                <div class="container-5">
+                    <h2>¿Quién brinda el acompañamiento? </h2>
                         <p>
                             El servicio de acompañamiento psicoemocional que se promueve a través de CONTACTO JOVEN, es
                             ofrecido
@@ -272,35 +280,28 @@ include_once '../php/connection_global.php';
                             de
                             joven
                             a joven. En CONTACTO JOVEN no se ofrece psicoterapia o tratamiento psiquiátrico.
+
+                            Todas las personas que participan en CONTACTO JOVEN, fueron seleccionados bajo un proceso
+                            competitivo y
+                            riguroso, así mismo toda la red forma parte de un proceso de capacitación inicial por parte de
+                            Imjuve,
+                            Unicef, Secretaría de Gobernación, y Secretaría de Salud, con la finalidad de brindar un servicio
+                            profesional y de calidad.
+                            <br><br>
+                            Las y los acompañantes atienden casos relacionados a estrés, la ansiedad y el manejo de emociones, y
+                            canalizan a servicios especializados aquellos casos que presenten problemáticas asociadas a
+                            situaciones
+                            de
+                            violencia, consumo problemático de sustancias, daño autoinfligido e ideación suicida. En CONTACTO
+                            JOVEN
+                            no
+                            se ofrece psicoterapia o tratamiento psiquiátrico.
+                            <br><br>
+                            Las y los acompañantes reciben supervisión por profesionales en áreas afines a salud mental, las y
+                            los
+                            supervisores cuentan con título, cédula profesional y experiencia en la atención de casos, a fin de
+                            garantizar que el servicio otorgado será el óptimo.
                         </p>
-                    </div>
-                    <div>
-                        <img src="../public/recurso21.png">
-                    </div>
-                </div>
-
-                <div class="container-5">
-                    Todas las personas que participan en CONTACTO JOVEN, fueron seleccionados bajo un proceso
-                    competitivo y
-                    riguroso, así mismo toda la red forma parte de un proceso de capacitación inicial por parte de
-                    Imjuve,
-                    Unicef, Secretaría de Gobernación, y Secretaría de Salud, con la finalidad de brindar un servicio
-                    profesional y de calidad.
-                    <br><br>
-                    Las y los acompañantes atienden casos relacionados a estrés, la ansiedad y el manejo de emociones, y
-                    canalizan a servicios especializados aquellos casos que presenten problemáticas asociadas a
-                    situaciones
-                    de
-                    violencia, consumo problemático de sustancias, daño autoinfligido e ideación suicida. En CONTACTO
-                    JOVEN
-                    no
-                    se ofrece psicoterapia o tratamiento psiquiátrico.
-                    <br><br>
-                    Las y los acompañantes reciben supervisión por profesionales en áreas afines a salud mental, las y
-                    los
-                    supervisores cuentan con título, cédula profesional y experiencia en la atención de casos, a fin de
-                    garantizar que el servicio otorgado será el óptimo.
-
                 </div>
 
 
