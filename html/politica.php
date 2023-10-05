@@ -39,7 +39,8 @@ include_once '../php/connection_global.php';
     <div class="container-1">
       <img src="../public/recurso4.png">
       <h1>
-        POLITICA DE <br>
+        POLITICA 
+        DE 
         PRIVACIDAD
       </h1>
     </div>
